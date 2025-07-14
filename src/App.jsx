@@ -26,8 +26,8 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      <Header />
       <ChatBox/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course/:id" element={<CourseDetail />} />
