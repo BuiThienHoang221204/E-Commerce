@@ -72,7 +72,7 @@ const Header = () => {
             </button>
 
             {/* Mobile Menu */}
-            <div className={`${open ? 'flex' : 'hidden'} absolute bg-gradient-to-b from-cyan-100/70 top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
+            <div className={`${open ? 'flex' : 'hidden'} z-20 absolute bg-gradient-to-b from-cyan-100/70 top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
                 <NavLink to="/">Trang Chủ</NavLink>
                 <NavLink to="/course-list">Khóa Học</NavLink>
                 <NavLink to="/my-courses">Ưu Thích</NavLink>
