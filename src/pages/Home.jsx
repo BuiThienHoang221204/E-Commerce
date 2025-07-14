@@ -53,7 +53,7 @@ const Home = () => {
             <div className='container mx-auto'>
                 <div className='max-w-4xl mx-auto py-10'>
                     <p className='text-center mb-10 text-base font-medium'>Có hơn <span className='text-[#2563EB]'>300.000</span> người tin tưởng từ</p>
-                    <div className='overflow-hidden'>
+                    <div className='w-full overflow-x-hidden'>
                         <div className='flex gap-8 justify-center animation-slideshow'>
                             {[...listImg, ...listImg].map((item, index) => {
                                 return (

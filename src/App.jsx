@@ -26,7 +26,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      <ChatBox/>
+      <ChatBox />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
