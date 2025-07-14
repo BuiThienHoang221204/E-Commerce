@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "react-toastify/dist/ReactToastify.css";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+/* animation box */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  2% { transform: translateX(-2px); }
+  4% { transform: translateX(2px); }
+  6% { transform: translateX(-1.5px); }
+  8% { transform: translateX(1.5px); }
+  10% { transform: translateX(-1px); }
+  12% { transform: translateX(1px); }
+  14% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+
+.animation-box {
+  animation: shake 2s ease-in-out infinite;
+}
+
+/* auto slide show */
+.animation-slideshow {
+  width: fit-content;
+  animation: slide-left 10s linear infinite;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* animation-slideshow-globle */
+@keyframes scrollX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animation-slideshow-globle {
+  animation: scrollX 10s linear infinite;
+}
+
+.rich-text {
+  font-size: 15px;
+  color: #7a7b7d;
+}
+.rich-text p {
+  margin-bottom: 16px;
+}
+.rich-text h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #252525;
+  margin: 32px 0;
+}
+.rich-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #252525;
+  margin: 24px 0;
+}
+.rich-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin: 20px 0;
+}
+.rich-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444444;
+  margin: 16px 0;
+}
+.rich-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+  margin: 12px 0;
+}
+.rich-text h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  margin: 8px 0;
+}
+.rich-text strong {
+  font-weight: 700;
+}
+.rich-text ul {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+.rich-text ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+.rich-text li {
+  margin-bottom: 8px;
+}
