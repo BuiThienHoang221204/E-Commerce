@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const FeedbackCard = ({ feedback }) => {
     return (
-        <div className={`relative flex flex-col rounded-lg group cursor-pointer lg:w-[320px] lg:h-auto mb-10 shadow-sm border border-[#E1E1E1] hover:border-[#E6FFFF]/16 hover:bg-indigo-50`}
+        <div className={`container mx-auto relative flex flex-col rounded-lg group cursor-pointer lg:w-[320px] lg:h-auto mb-10 shadow-sm border border-[#E1E1E1] hover:border-[#E6FFFF]/16 hover:bg-indigo-50`}
         >
             {/* Hover overlay content */}
             <div className="w-full p-3 absolute top-1/4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-left">

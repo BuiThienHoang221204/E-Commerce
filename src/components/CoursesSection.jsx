@@ -7,7 +7,7 @@ const CoursesSection = () => {
     const { courses } = useContext(CourseContext);
     console.log(courses);
     return (
-        <div className='py-16 md:px-4 px-8 text-center'>
+        <div className='container mx-auto py-16 md:px-4 px-8 text-center'>
             <h2 className='text-2xl lg:text-4xl font-bold text-gray-800'>Học hỏi từ những chuyên gia hàng đầu</h2>
             <p className='text-sm lg:text-base text-gray-500 mt-3 lg:w-[60%] mx-auto'>
                 Khám phá các khóa học được đánh giá cao nhất của chúng tôi ở nhiều lĩnh vực khác nhau.

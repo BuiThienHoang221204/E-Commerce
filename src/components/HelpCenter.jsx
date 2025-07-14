@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const HelpCenter = () => {
     return (
-        <div className="flex flex-col items-center justify-around max-sm:text-sm  rounded-2xl m-2 lg:py-10 py-5 w-full bg-white">
+        <div className="container mx-auto flex flex-col items-center justify-around max-sm:text-sm  rounded-2xl m-2 lg:py-10 py-5 w-full bg-white">
             <h2 className="md:text-4xl text-2xl font-bold text-gray-800">Cải Thiện Bản Thân Ngay Hôm Nay</h2>
             <p className="mt-4 text-slate-500 max-w-xl text-center">Đội ngũ giảng viên tận tâm và hệ thống hỗ trợ học tập 24/7 sẽ đồng hành cùng bạn trong suốt quá trình học.</p>
             <div className="flex items-center gap-4 mt-6">
