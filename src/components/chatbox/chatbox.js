@@ -9,20 +9,26 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 export const getProductSuggestions = async (productList, input) => {
     const prompt = `
-        Người dùng vừa nhập: "${input}"
-
-        Dưới đây là danh sách các khóa học:
-        ${productList}
-        
-        Dựa trên thông tin người dùng cung cấp, hãy chọn ra **một** khóa học phù hợp nhất với nhu cầu của họ (không mặc định chọn phổ biến nếu có khóa học phù hợp hơn).
-        
-        Hãy trả về đúng theo định dạng sau (không markdown, không dấu *, chỉ dùng gạch đầu dòng "•"):
-        Dựa trên yêu cầu của bạn tôi sẽ đề xuất như sau
-        • Tên khóa học: ...
-        • Đánh giá: ...
-        • Mô tả ngắn gọn: ...
-        • Giá: ...
+    Người dùng vừa nhập: "${input}"
+    
+    Dưới đây là danh sách các khóa học:
+    ${productList}
+    
+    Nhiệm vụ của bạn là hành xử như một trợ lý học tập thân thiện.
+    
+    • Nếu người dùng đang **hỏi về khóa học**, hãy dựa trên nhu cầu của họ để chọn ra **một khóa học phù hợp nhất**. KHÔNG mặc định chọn khóa học phổ biến nếu có khóa học phù hợp hơn.
+    
+    • Nếu người dùng **không đề cập gì đến khóa học**, hãy phản hồi như một đoạn hội thoại tự nhiên (ví dụ: chào hỏi, hướng dẫn người dùng bắt đầu, gợi ý chung).
+    
+    Nếu chọn được khóa học, trả lời đúng theo định dạng sau (không markdown, không dấu *, chỉ dùng gạch đầu dòng "•"):
+    
+    Dựa trên yêu cầu của bạn tôi sẽ đề xuất như sau  
+    • Tên khóa học: ...  
+    • Đánh giá: ...  
+    • Mô tả ngắn gọn: ...  
+    • Giá: ...
     `;
+
 
     try {
         const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
