@@ -97,6 +97,9 @@ const CourseDetail = () => {
           </div>
         </div>
       </div>
+      <div className='w-full h-[500px] md:h-[700px]'>
+        <iframe src='https://my.spline.design/untitled-V4RBMjaZsRNYJuqbUMuxIMRW/' frameborder='0' width='100%' height='100%'></iframe>
+      </div>
     </div>
   ) : <Loading />
 }
