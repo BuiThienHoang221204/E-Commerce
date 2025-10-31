@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import Spline from '@splinetool/react-spline';
 import Hero from '../components/Hero'
 import microsoft_logo from '../assets/microsoft_logo.svg'
 import walmart_logo from '../assets/walmart_logo.svg'
@@ -50,6 +51,7 @@ const Home = () => {
     return (
         <>
             <Hero />
+             <Spline scene="https://prod.spline.design/qicmCTSMarHg1SoN/scene.splinecode" />
             <div className='container mx-auto'>
                 <div className='max-w-4xl mx-auto py-10'>
                     <p className='text-center mb-10 text-base font-medium'>Có hơn <span className='text-[#2563EB]'>300.000</span> người tin tưởng từ</p>
